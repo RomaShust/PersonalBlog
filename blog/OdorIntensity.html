@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Roma Shusterman</title>
-    <meta name="description" content="neuromorphic modeling; human neural systems; artificial neural systems; 
-										Parkinson’s disease; Physicist, Scientist, Engineer" />
-    <link href="./style/paper.css" type="text/css" rel="stylesheet" />
-	<link href="./style/index.css" rel="stylesheet" />
-	<link href="./style/blog.css" rel="stylesheet" />
+    <title>Perception and neural coding od odor intensity</title>
+    <meta name="author" content="Roma Shusterman">
+    <meta name="keywords" content="olfactory systems, odor delivery, odor intensity" />
+    <link href="../style/paper.css" type="text/css" rel="stylesheet" />
+	<link href="../style/index.css" rel="stylesheet" />
+	<link href="../style/blog.css" rel="stylesheet" />
 	<base target="_blank">
   </head>
   
@@ -15,51 +15,96 @@
   <body>
 	  <div class="wrapper">  
 			<div class = "grid">
-				<div class = "header header_ref">
-					<div> <a class = "header_ref" href="index.html" target="_self"> Roma Shusterman </a> </div>
-					<div> <a class = "header_ref" href="research.html" target="_self"> Research </a> </div>
+				<div class = "header">
+					<div> <a class = "header_ref" href="../index.html" target="_self"> Roma Shusterman </a> </div>
+					<div> <a class = "header_ref" href="../research.html" target="_self"> Research </a> </div>
 					<div> <a class = "header_ref" href="https://www.linkedin.com/in/roma-shusterman/"> LinkedIn </a>  </div>  
 				</div>
 
-				<div class = "title">Olfactory Research</div>
-				
-				
-
-				<div class = "blog_grid">
-					<img class = "blog_image" src="./images/OdorIntensity.png">
-					<div class = "blog_title"> Coding of perceived odor intensity</div> 
-					<div class = "blog_abstract"> 	One of the aims of systems neuroscience is to link neural activity in 
-													different stages of brain processing with specific sensations or percepts. 
-													This has been accomplished for our senses of touch and vision,not for our 
-													sense of smell, or olfaction. To better understand olfaction, we started 
-													with a basic sensation common to many sensory systems: intensity.</div>
+				<div class = "title">Coding of perceived odor intensity</div>
+			
+				<div class = "blog_content"> One of the aims of systems neuroscience is to link neural activity in different stages 
+										of brain processing with specific sensations or percepts. This has been accomplished 
+										for our senses of touch and vision, but not for our sense of smell, or olfaction. To 
+										better understand olfaction, we started with a basic sensation common to many sensory 
+										systems: intensity. Based on prior work, we knew that mammals (rats and humans) compare 
+										quantities (concentrations) of different odors based on their perceived intensity.
 				</div>
 				
-				<div class = "blog_grid">
-					<img class = "blog_image" src="./images/deltaC.png">
-					<div class = "blog_title"> Concentration change detectors in olfaction </div> 
-					<div class = "blog_abstract"> 	Olfactory navigation requires comparing of, odor concentration across samples 
-													distributed in space and time. One potential strategy of odor source localization 
-													is sequential (temporal) comparison: the animal chooses direction in the olfactory 
-													surroundings by detecting concentration changes in time (ΔCt). Our results indicate that 
-													olfactory cells explicitly compute ΔCt, providing a signal that may guide navigational 
-													decisions in downstream olfactory circuits.</div>
+				<div class = "blog_content"> Previous work showed that neuronal activity in different parts of the brain (the piriform 
+										cortex, entorhinal cortex, and amygdala) correlates with odor concentration.  However, 
+										this is not enough evidence for consistency with perception. In rats and humans, the 
+										perceived intensity of odors grows systematically with their concentration but rapidly 
+										decreases after prolonged sampling (or sniffing) due to adaptation. Thus, perceived 
+										intensity for a given odor is a function of at least two variables: the physical 
+										concentration of an odor outside the nose and the sampling duration. Therefore, in order 
+										for a neuronal response to represent intensity, it must change consistently with 
+										concentration and adaptation.
+				</div>	
+				
+				<div class = "blog_content"> We hypothesized that a neural representation, or code, for odor intensity may already 
+											 exist in the activity patterns of mitral and tufted cells (MTC) in the olfactory bulb. 
+											 To test this hypothesis, we characterized changes in electrophysiological activity of 
+											 MTCs as a function of odor concentration and adaptation and examined them for consistency 
+											 erception. MTCs respond to odors not only by changing the total number of spikes they 
+											 fire (rate code) but also by changing how spikes are distributed over time or their 
+											 temporal pattern. During every sniff cycle, MTCs fire a characteristic pattern of spikes. 
+											 When a new odor is presented, this pattern can change even while the total number of spikes 
+											 remains the same (temporal code).
+				</div>
+
+				<img class = "blog_image" src = "../images/OdorIntensity.png">
+
+				<div class = "image_legend"> Left: Schematics of the effect of each of the transformation on sniff cycles.
+											 
+					Right: Raster plots of the response of MT cell aligned according to different 
+											 schematics.
 				</div>
 				
-
-				<div class = "title">Sleep Research</div>
-				
-				<div class = "content"> My laboratory developed a closed-loop 
-										<a href="https://www.rosco.tech/products/concentration-change-manifold"> 
-										odor delivery system </a>that allows switching between odor concentrations on 
-										the single sniff scale (Bizer et al. in preparation). This development led to 
-										the discovery of neurons that keep the memory of changes in odor concentration 
-										providing a signal that may guide navigational decisions (Parabucki et al. 2019).
+				<div class = "blog_content"> We first looked at how MTC odor responses change as a function of odor 
+					concentration (Fig. 1).  We next examined changes in responses due to adaptation by comparing the 
+					response on the first sniff of odor with consecutive sniffs; Fig. 3).  We compared how MTC responses 
+					change with concentration and adaptation based on total spike count (rate code; Fig. 5) and as well as 
+					spike temporal pattern (temporal code; Fig. 4). We found that changes in the total number of spikes 
+					fired by MTCs were not similar to odor dilution and adaptation (Fig. 5).  However, the temporal pattern 
+					of the spikes within each sniff changed in suggestively similar ways, in terms of both the latency and 
+					the amplitude of the response.
 				</div>
 
-				<div class = "content"> In January 2018 I joined a scientifically-based start-up company <a href="http://www.bel.company" target="_blank"> Brain Electrophysiological Laboratory </a> (BEL) founded by Prof. Don Tucker. The BEL mission is to advance the science of human neural systems through modeling and analysis with artificial neural systems. Here, I am simulating cortical function via neuromorphic modeling and leading the engineering development of noninvasive technologies for 1) sleep improvement and 2) relief from Parkinson’s disease symptoms.</div>
+				<div class = "blog_content"> Each odorant activates multiple different receptor types and thus multiple MTCs 
+					in the olfactory bulb. Therefore, odors are likely represented by the activity of multiple cells, so we 
+					looked at how does odor concentration encoded by a population of MTCs. To do this, we grouped the measured 
+					responses of MTCs together into population response vectors (PRVs).  We build a PRV for each sniff of each 
+					odor concentration on each odor presentation (or trial). We ended up with many PRVs.  To see how these PRVs 
+					change across concentration and sniff number we applied Principal Component Analysis (PCA), which helps 
+					identify the most meaningful basis to re-express a noisy, data set. The assumption underlying PCA is that 
+					this new basis (or principal components, PCs) will filter out the noise and reveal the most prominent 
+					features of the data set. We visualized PRV responses on each sniff and concentration by plotting the 
+					responses in the space of the first three PCs, which accounted for 70% of the total variance in our data 
+					set (Fig. 6).  This showed that changes in PRVs with concentration and adaptation were similar to each 
+					other and therefore consistent with a representation of odor intensity. From this, we formed the following 
+					hypothesis: adaptation should make it harder to distinguish PRVs for different concentrations.
+				</div>
 
-				
+				<div class = "blog_content"> We tested this hypothesis quantitatively. Animals can gauge odor intensity from a 
+					single sniff of odor, so we checked how well a simple computer algorithm, called a classifier, could 
+					identify odor concentration based on the Euclidean distance between a single PRV and the average PRVs 
+					observed for different concentrations. Using PRVs from the first sniff of odor the classifier was able 
+					to identify the coded concentration with 92% accuracy. But performance using subsequent sniffs fell below 
+					78% (Fig. 7B). Thus, although concentration information was still largely intact after adaptation, odor 
+					concentrations were harder to distinguish, consistent with our first hypothesis.
+				</div>
+
+				<div class = "blog_content"> To summarize, we compared neural activity in the mouse olfactory bulb with odor 
+					intensity perception in humans. We found the two to be consistent.  Odor responses changed with decreasing 
+					concentration and repeated sampling of a constant odor source in similar ways. Using a classifier, we found 
+					that the odor concentration coded on later sniffs was sharply lower than on the first sniff. These neural 
+					results were consistent with the sharp sniff to sniff drop in odor intensity reported by human volunteers. 
+					Our data suggest that responses of neurons in the olfactory bulb are consistent with odor intensity perception.
+				</div>
+
+				<div class = "footer">  </div>
+
 			</div>
 		</div> 
 	</body>
