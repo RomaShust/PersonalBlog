@@ -12,12 +12,10 @@
 .grid{
 	display:grid;
 	grid-template-rows: repeat(minmax(7, auto)  minmax(50px, auto));
-	/*grid-template-columns: repeat(6  minmax(50px, auto));*/
 	grid-gap: 10px;
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 5px 10px 18px #888888;
 	--primary-color: #37b387;
-	/*border: 1px solid #004136;*/
 	margin-bottom: 30px;
 }
 
@@ -29,7 +27,6 @@
 	letter-spacing: 2px;
 	background: linear-gradient(to right, var(--primary-color) 0%, #76bf5d 100%);
 	border-radius: 15px 15px 0px 0px;
-	/*border: 1px dotted #0074d9;*/
 	grid-column: 1/7;
 	grid-row-start: 1;
 }
@@ -38,8 +35,8 @@
 	grid-column: 1/ span 4;
 	font-family: inherit;
 	font-weight: 700;
-	/*border: 1px dotted #0074d9;*/
 	padding: 20px;
+	margin-top: 30px;
 }
 .title {
 	font-size: 30px;
@@ -56,11 +53,9 @@
 	line-height: 24px;
 	word-break: break-word;
 	/*border: 1px dotted #0074d9;*/
-	margin-left: 30px;
 	padding: 0px;
 	line-height: 1.8;
-	margin-bottom: 10px;
-	margin-right: 20px;
+	margin: 0px 20px 10px 30px; /* top right bottom left */
 }
 
 .content{
@@ -89,14 +84,12 @@
 }
 
 .footer{
-	/*border: 1px dotted #0074d9;*/
 	margin-bottom: 30px;
 	grid-column: 1/5;  
 }
 
 .about_me{
 	display: grid;
-	/*border: 1px dotted red;*/
 	grid-column: 4/6;
 	grid-row: 3/ span 2;
 	grid-template-rows: repeat(2,  minmax(30px, auto));
@@ -150,10 +143,7 @@ a:link{
 	font-size: 14px;
 	color: #555;
 	line-height: 27px;
-	/*border: 1px dotted var(--primary-color);*/
-	margin-left: 20px;
-	margin-bottom: 50px;
-	margin-right: 20px;
+	margin: 50px 20px 0px 20px; /* top right bottom left */
   }
   
 
